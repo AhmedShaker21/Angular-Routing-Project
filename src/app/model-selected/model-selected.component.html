@@ -1,0 +1,22 @@
+<div class="row g-5 row-cols-1 row-cols-md-2 row-cols-lg-3">
+
+  @for (images of imagesURL; track $index) {
+    <div class="col rounded-3">
+      <div class="position-relative">
+        <img class="w-100 rounded-3" src="{{images}}" alt="image of project">
+        <div [style]="'background-color:#1abc9ce6;'" (click)="openLightBox();currentImageIndex($index)"
+          class="d-flex justify-content-center align-items-center layer rounded-3 position-absolute top-0 bottom-0 start-0 end-0">
+<i class="fa-solid fa-plus plusIcon"></i>
+        </div>
+      </div>
+    </div>
+  }
+</div>
+<div [ngClass]="{'d-none':flag}" (click)="closeLightBox($event)" [style]="'background-color:rgba(194,219,254,0.5);'"
+  class="lightbox position-fixed top-0 bottom-0 start-0 end-0 d-flex justify-content-center align-items-center">
+  <div class=" position-relative">
+
+    <img (click)="imgLightBox($event)" [style]="'width:600px;'" class="rounded-3" [src]="imagesURL[currentImage]"
+      alt="image lightbox">
+  </div>
+</div>

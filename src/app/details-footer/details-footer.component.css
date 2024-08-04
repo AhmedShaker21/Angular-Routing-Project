@@ -1,0 +1,14 @@
+.detailsFooter{
+  background-color: #2C3E50;
+  padding: 5.625rem;
+}
+.icon{
+  width: 40px;
+  height: 40px;
+
+}
+@media (max-width: 570px) {
+ .pSmall-570{
+  padding-top: 90px;
+ }
+}

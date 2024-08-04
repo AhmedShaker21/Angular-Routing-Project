@@ -1,0 +1,7 @@
+a{
+  text-decoration: none;
+}
+main{
+  margin-top: 85px;
+  height: calc(-100px+100vh);
+}

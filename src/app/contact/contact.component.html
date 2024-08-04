@@ -1,0 +1,37 @@
+<section class="portfolioSection portfolio d-flex justify-content-center py-5 h-100">
+  <div class="container">
+    <div class="row ">
+      <div class="col-12">
+        <div class=" text-center">
+          <h1 class="fw-bold text-uppercase text-black">contact section</h1>
+          <app-star [isBackgroundBlack]="starComponentBackgroundBlack"></app-star>
+        </div>
+        <form>
+          <div>
+            <label [class.active]="userName" class="p-3" for="userName">userName</label>
+            <input (input)="userNameInput($event,'userName')" id="userName" placeholder="userName"
+              class="border-0 border-bottom rounded-2  p-3  w-100" type="text">
+          </div>
+          <div>
+            <label [class.active]="age" class="p-3" for="userAge">userAge</label>
+            <input (input)="userNameInput($event,'userAge')" id="userAge" placeholder="userAge"
+              class="border-0 border-bottom rounded-2  p-3 w-100" type="number">
+          </div>
+          <div>
+            <label [class.active]="email" class="p-3" for="userEmail">userEmail</label>
+            <input (input)="userNameInput($event,'userEmail')" id="userEmail" placeholder="userEmail"
+              class="border-0 border-bottom rounded-2 p-3 w-100" type="email">
+          </div>
+          <div>
+            <label [class.active]="password" class="p-3" for="userPassowrd">userPassowrd</label>
+            <input (input)="userNameInput($event,'userPassword')" id="userPassowrd" placeholder="userPassowrd"
+              class="border-0 border-bottom rounded-2 p-3 w-100" type="password">
+          </div>
+        </form>
+        <button class="my-3 btn text-white me-auto buttonGreen">send Message</button>
+
+      </div>
+    </div>
+
+  </div>
+</section>

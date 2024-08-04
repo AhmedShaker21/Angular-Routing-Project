@@ -1,0 +1,22 @@
+input:focus {
+  outline: none;
+  background-color: white;
+  position: relative;
+}
+
+label {
+  background-color: white;
+  text-align: left;
+  position: relative;
+  top: 50px;
+  z-index: -1;
+  transition: 0.5s all;
+}
+
+label.active {
+  top: 10px;
+  color: var(--primary-color);
+}
+.buttonGreen{
+    background-color: var(--primary-color);
+}

@@ -1,0 +1,22 @@
+/* You can add global styles to this file, and also import other style files */
+:root{
+  --primary-color: #1ABC9C;
+  --secondary-color: #2ECC71;
+  --text-color: #34495E;
+  --bg-color: #F8F9FA;
+}
+.bgPrimary{
+  background-color: var(--primary-color);
+}
+h1,h2
+,h3
+h4,h5,h6,span,i,p ,a{
+  color: white !important;
+}
+
+.home,
+.about,
+.portfolio,
+.contact {
+  height: 90vh;
+}

@@ -1,0 +1,34 @@
+<section class="detailsFooter">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4 ">
+        <div class="text-center d-flex flex-column">
+          <h2 class="text-uppercase fs-4">{{detail[0].sectionName}}</h2>
+          <span>{{detail[0].address}}</span>
+          <span class="pt-3">{{detail[0].sectionName}}</span>
+        </div>
+      </div>
+      <div class="col-md-4 pSmall-570">
+        <div class="text-center d-flex flex-column">
+          <h2 class="text-uppercase fs-4">{{detail[1].sectionName}}</h2>
+          <div class="icons d-flex justify-content-center gap-2">
+            @for (icon of iconsBrands; track $index) {
+            <div class="icon border d-grid rounded-circle">
+              <i class="fa-brands m-auto fa-{{icon}}"></i>
+            </div>
+            }
+            <div class="icon border d-grid  rounded-circle">
+              <i class="fa-solid m-auto fa-globe"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 pSmall-570">
+        <div class="text-center d-flex flex-column">
+          <h2 class="text-uppercase fs-4">{{detail[2].sectionName}}</h2>
+          <p>{{detail[2].details}}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
